@@ -10,6 +10,8 @@ from torch_geometric.data import HeteroData
 from torch_geometric.utils import to_undirected
 from src.model3 import HeteroGNN, pretrain_model
 
+#ys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 # Verificación de GPU
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

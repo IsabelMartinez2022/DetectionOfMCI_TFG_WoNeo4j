@@ -11,6 +11,8 @@ from sklearn.model_selection import KFold
 from torch_geometric.data import HeteroData
 from src.model3 import HeteroGNN
 
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
+
 # Configuración de GPU
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
